@@ -1,7 +1,7 @@
 # ASC-Transcriptome
 Pipeline for assembly and annotation of a de-novo transcriptome using the Alabama SuperComputer.
 
-# 1. Removing Adapters
+# 1. Removing Adapters from Raw Reads with CutAdapt
 Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing provider.
 There are two adapters because this transcriptome was sequenced using Illumina Paired-end sequencing.
 
@@ -15,3 +15,5 @@ There are two adapters because this transcriptome was sequenced using Illumina P
 
 Ran Cutadapt with the following parameters:
 4:00:00 run time, medium queue, 16gb memory, 16 cores, dmc
+
+# 2. Assembling Raw Reads into Transcriptome with Trinity
