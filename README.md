@@ -37,3 +37,5 @@ transcripts.fasta.transdecoder.bed : bed-formatted file describing ORF positions
 The .cds file is the identified ORFS in the assembled transcriptome, which includes duplicates.
 
 # 4. Removing Duplicate ORFs using CD-HIT
+
+To reduce redundancy in the transcriptome, CD-HIT is executed on the transcriptome.fasta file. 
