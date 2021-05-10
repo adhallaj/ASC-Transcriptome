@@ -3,7 +3,7 @@ Pipeline for assembly and annotation of a de-novo transcriptome using the Alabam
 
 # Notes before starting:
 
-All .sh scripts need to have the <b>chmod +x</b> command executed on them to be able to run via run_script on the ASC.
+All .sh scripts need to have the [chmod +x] command executed on them to be able to run via run_script on the ASC.
 
 # 1. Removing Adapters from Raw Reads with CutAdapt
 Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing provider.
