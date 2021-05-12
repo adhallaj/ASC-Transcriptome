@@ -39,3 +39,14 @@ The .cds file is the identified ORFS in the assembled transcriptome, which inclu
 # 4. Removing Duplicate ORFs using CD-HIT
 
 To reduce redundancy in the transcriptome, CD-HIT is executed on the transcriptome.fasta file. 
+
+# 5. Annotating Transcriptome with BlastX
+
+The database sequences for annotation were retreived from www.ensembl.org/biomart/martview/63a2a5523e122bc98f5b553dd30b6afe via the following steps:
+
+  - In the drop down menu - CHOOSE DATABASE - select Ensembl Genes 104
+  - In the - CHOOSE DATASET MENU - select the organism you want to use as reference
+  - Under Attributes Select Sequences, Under Sequences check Peptide, and Under Header Information check only the Gene Stable ID box
+  - Click results, Export all results to Compressed web file (notify by email)
+  - Enter your email and hit Go
+  - You should get a link to download your database sequences as a .txt.gz file in fasta format
