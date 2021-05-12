@@ -46,7 +46,18 @@ The database sequences for annotation were retreived from www.ensembl.org/biomar
 
   - In the drop down menu - CHOOSE DATABASE - select Ensembl Genes 104
   - In the - CHOOSE DATASET MENU - select the organism you want to use as reference
-  - Under Attributes Select Sequences, Under Sequences check Peptide, and Under Header Information check only the Gene Stable ID box
-  - Click results, Export all results to Compressed web file (notify by email)
-  - Enter your email and hit Go
+  - Under Attributes select Sequences, under Sequences check Peptide, and under Header Information check only the Gene Stable ID box
+  - Click [Results], [Export all results to Compressed web file (notify by email)]
+  - Enter your email and hit [Go]
   - You should get a link to download your database sequences as a .txt.gz file in fasta format
+
+# 6. Annotating GO Terms
+
+ - In the drop down menu [- CHOOSE DATABASE -] select [Ensembl Genes 104]
+ - In the [- CHOOSE DATASET MENU -] select the organism you want to use as reference
+ - Under [Attributes] select [Features], under [Gene] check the [Gene Stable ID] and [Gene Name] box
+ - Under [External] check the [GO term accession], [GO term name], and [GO term definition] boxes
+ - Click [Results], from the file type drop down menu select [CSV]
+ - Click [Export all results to Compressed web file (notify by email)]
+ - Enter your email and hit [Go]
+ - You should get a link to download your database sequences as a .txt.gz file in fasta format
