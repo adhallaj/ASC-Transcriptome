@@ -70,11 +70,11 @@ The database sequences for annotation were retreived from www.ensembl.org/biomar
 
 Concatenated all of the BLASTX output files together using the following code:
 
-   cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
+    cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
   
 Concatenated all of the GO terms together using the following code:
 
-   cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
+    cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
 
 Make the following adjustments to the filter_blastx.sh file:
 
