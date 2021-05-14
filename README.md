@@ -61,3 +61,15 @@ The database sequences for annotation were retreived from www.ensembl.org/biomar
  - Click [Export all results to Compressed web file (notify by email)]
  - Enter your email and hit [Go]
  - You should get a link to download your database sequences as a .txt.gz file in fasta format
+
+# 7. Determining Which Sequences Were/Weren't Annotated with the filter_blastx.sh Script
+
+Concatenated all of the GO terms together using the following code:
+
+  cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
+
+Concatenated all of the BLASTX output files together using the following code:
+
+  cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
+  
+Ran on the supercomputer with 20 cores, 20gb memory, large queue, 24:00:00, dmc
