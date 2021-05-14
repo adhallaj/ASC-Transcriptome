@@ -5,6 +5,10 @@ Pipeline for assembly and annotation of a de-novo transcriptome using the Alabam
 
 All .sh scripts need to have the [chmod +x] command executed on them to be able to run via run_script on the ASC.
 
+Scripts were run using the following command:
+
+  run_script scriptname.sh
+
 # 1. Removing Adapters from Raw Reads with CutAdapt
 Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing provider.
 There are two adapters (and two raw data .fq.gz files) because this transcriptome was sequenced using Illumina paired-end sequencing.
@@ -64,12 +68,18 @@ The database sequences for annotation were retreived from www.ensembl.org/biomar
 
 # 7. Determining Which Sequences Were/Weren't Annotated with the filter_blastx.sh Script
 
-Concatenated all of the GO terms together using the following code:
-
-  cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
-
 Concatenated all of the BLASTX output files together using the following code:
 
   cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
   
-Ran on the supercomputer with 20 cores, 20gb memory, large queue, 24:00:00, dmc
+Concatenated all of the GO terms together using the following code:
+
+  cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
+
+Make the following adjustments to the filter_blastx.sh file:
+
+  - Update the indir variable to the directory containing the A1_blastedmaster file
+  - Update the blastfile variable to the name of your concatenated A1_blastedmaster file (in my case the file was actually called A1_blastedmaster)
+  - Update the goinfo variable to the name of your concatenated masterGO.csv file (mine was also called masterGO.csv)
+
+Ran the filter_blastx.sh on the supercomputer with 20 cores, 20gb memory, large queue, 24:00:00, dmc.
