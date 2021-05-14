@@ -7,7 +7,7 @@ All .sh scripts need to have the [chmod +x] command executed on them to be able 
 
 Scripts were run using the following command:
 
-  run_script scriptname.sh
+    run_script scriptname.sh
 
 # 1. Removing Adapters from Raw Reads with CutAdapt
 Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing provider.
@@ -22,7 +22,8 @@ There are two adapters (and two raw data .fq.gz files) because this transcriptom
 5'-GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG-3'
 
 Ran Cutadapt with the following parameters:
-4:00:00 run time, medium queue, 16gb memory, 16 cores, dmc
+
+    4:00:00 run time, medium queue, 16gb memory, 16 cores, dmc
 
 # 2. Assembling Raw Reads into a Transcriptome with Trinity
 Now there are two files of sequences, adapter free, that need to be assembled. This assembly is done via Trinity. Both files will be combined and assembled in an output .fasta file specified by the flag --output.
@@ -82,4 +83,6 @@ Make the following adjustments to the filter_blastx.sh file:
   - Update the blastfile variable to the name of your concatenated A1_blastedmaster file (in my case the file was actually called A1_blastedmaster)
   - Update the goinfo variable to the name of your concatenated masterGO.csv file (mine was also called masterGO.csv)
 
-Ran the filter_blastx.sh on the supercomputer with 20 cores, 20gb memory, large queue, 24:00:00, dmc.
+Ran the filter_blastx.sh on the supercomputer with the following parameters:
+
+    20 cores, 20gb memory, large queue, 24:00:00, dmc.
