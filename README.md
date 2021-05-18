@@ -56,7 +56,11 @@ The database sequences for annotation were retreived from http://useast.ensembl.
   - Enter your email and hit [Go]
   - You should get a link to download your database sequences as a .txt.gz file in fasta format
 
-The output of BLASTX will be a table file (chosen via the -outfmt '6 std qcovhsp' parameter). The rows are each match, and the columns are the following:
+Ran BLASTX with the following parameters:
+
+    medium queue, 16 cores, 50:00:00, 16gb, DMC
+
+The output of BLASTX is a table file (chosen via the -outfmt '6 std qcovhsp' parameter). The rows are each match, and the columns are the following:
 
     Name of your sequence(s) | Name of Matching Database Sequence | pident | length | mismatch | gapopen | qstart | qend | sstart | send | evalue | bitscore | qcovhsp
 
