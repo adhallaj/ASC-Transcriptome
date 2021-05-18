@@ -83,13 +83,11 @@ The GO terms were retreived from http://useast.ensembl.org/biomart/martview/ via
  - Enter your email and hit [Go]
  - You should get a link to download your database sequences as a .txt.gz file in fasta format
 
-# 7. Determining Which Sequences Were/Weren't Annotated with the filter_blastx.sh Script
-
-Concatenated all of the BLASTX output files together using the following code:
+Instead of running the filter script iteratively on each BLASTX output, the BLASTX outputs were concatenated:
 
     cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
   
-Concatenated all of the GO terms together using the following code:
+For the filter script to work, the GO Terms were also concatenated:
 
     cat amazonmollyGO.csv giltheadseabreamGO.csv midascichlidGO.csv largeyellowcroakerGO.csv zebrafishGO.csv > masterGO.csv
 
