@@ -64,9 +64,11 @@ The output of BLASTX is a table file (chosen via the -outfmt '6 std qcovhsp' par
 
     Name of your sequence(s) | Name of Matching Database Sequence | pident | length | mismatch | gapopen | qstart | qend | sstart | send | evalue | bitscore | qcovhsp
 
-# 6. Annotating GO Terms
+# 6. Filtering and Annotating GO Terms
 
-The GO terms we're retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
+Sequences with high percent identity matches (>75%), low evalues (<1e-10), and high query coverage per high similarity pairs (>26, where 33 is the max since these are amino acid sequences) were selected and matched to their corresponding GO Terms using the filter_blastx.sh script. Script written by Katherine Eaton, PhD candidate @ Auburn Unvisersity. 
+
+The GO terms were retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
 
  - In the drop down menu [- CHOOSE DATABASE -] select [Ensembl Genes 104]
  - In the [- CHOOSE DATASET MENU -] select the organism you want to use as reference
