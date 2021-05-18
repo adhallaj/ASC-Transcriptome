@@ -100,3 +100,7 @@ Make the following adjustments to the filter_blastx.sh file:
 Ran the filter_blastx.sh on the supercomputer with the following parameters:
 
     20 cores, 20gb memory, large queue, 24:00:00, dmc.
+
+The final output of the Filtered and GO Term annotated sequences are in a file called annotated_table.csv, the columns are:
+
+        Name of your sequence(s),percent identity match,evalue,Matching Ensmbl Database Sequence,GO accession ID,gene name,gene description
