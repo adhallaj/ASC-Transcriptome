@@ -47,7 +47,7 @@ To reduce redundancy in the transcriptome, CD-HIT is executed on the transcripto
 
 # 5. Annotating Transcriptome with BlastX
 
-The database sequences for annotation were retreived from www.ensembl.org/biomart/martview/63a2a5523e122bc98f5b553dd30b6afe via the following steps:
+The database sequences for annotation were retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
 
   - In the drop down menu - CHOOSE DATABASE - select Ensembl Genes 104
   - In the - CHOOSE DATASET MENU - select the organism you want to use as reference
@@ -56,7 +56,13 @@ The database sequences for annotation were retreived from www.ensembl.org/biomar
   - Enter your email and hit [Go]
   - You should get a link to download your database sequences as a .txt.gz file in fasta format
 
+The output of BLASTX will be a table file (chosen via the -outfmt '6 std qcovhsp' parameter). The rows are each match, and the columns are the following:
+
+    Name of your sequence(s) | Name of Matching Database Sequence | pident | length | mismatch | gapopen | qstart | qend | sstart | send | evalue | bitscore | qcovhsp
+
 # 6. Annotating GO Terms
+
+The GO terms we're retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
 
  - In the drop down menu [- CHOOSE DATABASE -] select [Ensembl Genes 104]
  - In the [- CHOOSE DATASET MENU -] select the organism you want to use as reference
