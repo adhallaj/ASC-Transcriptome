@@ -77,7 +77,7 @@ The GO terms were retreived from http://useast.ensembl.org/biomart/martview/ via
  - In the drop down menu [- CHOOSE DATABASE -] select [Ensembl Genes 104]
  - In the [- CHOOSE DATASET MENU -] select the organism you want to use as reference
  - Under [Attributes] select [Features], under [Gene] check the [Gene Stable ID] and [Gene Name] box
- - Under [External] check the [GO term accession], [GO term name], and [GO term definition] boxes
+ - Under [External] check the [GO term accession] and [GO term name] boxes
  - Click [Results], from the file type drop down menu select [CSV]
  - Click [Export all results to Compressed web file (notify by email)]
  - Enter your email and hit [Go]
