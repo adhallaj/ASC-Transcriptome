@@ -3,7 +3,7 @@ Pipeline for assembly and annotation of a de-novo transcriptome using the Alabam
 
 # Notes before starting:
 
-All .sh scripts need to have the [chmod +x] command executed on them to be able to run via run_script on the ASC.
+All .sh scripts need to have the [chmod +x] command executed on them to be able to run via [run_script] on the ASC.
 
 To be compatible with the ASC queue system, all scripts need to be modified with the following command:
 
