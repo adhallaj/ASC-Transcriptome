@@ -85,7 +85,7 @@ The GO terms were retreived from http://useast.ensembl.org/biomart/martview/ via
 
 Instead of running the filter script iteratively on each BLASTX output, the BLASTX outputs were concatenated:
 
-    cat A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
+    cat A1_blastedzebrafish A1_blastedamazonmolly A1_blastedmidascichlid A1_blastedgilthead A1_blastedlargeyellowcroaker > A1_blastedmaster
   
 For the filter script to work, the GO Terms were also concatenated:
 
