@@ -103,9 +103,13 @@ Ran the filter_blastx.sh on the supercomputer with the following parameters:
 
 The final output of the Filtered and GO Term annotated sequences are in a file called annotated_table.csv, the columns are:
 
-    Name of your sequence(s),percent identity match,evalue,Matching Ensmbl Database Sequence,GO accession ID,gene name
+    Name of your sequence(s),percent identity match,evalue,Matching Ensmbl Database Sequence,gene name,GO accession ID,gene description, gene definition
 
-# 7. Obtaining KEGG Metabolic Pathways using GhostKOALA:
+# 7. Summarizing the GO annotations using Rstudio:
+
+In the annotated_table.csv file, there are two columns that can be deleted because they are redundant and cause issues when summarizing. To get rid of these columns, open the annotated_table.csv file in Excel and delete the last two columns on the right. The two columns should be a short description of the gene (ex. microtubule binding) and a paragraph describing the genes function.
+
+# 8. Obtaining KEGG Metabolic Pathways using GhostKOALA:
 
 The CD-hit nucleotide output is the most complete form of our transcriptome, so it will be used for determining the metabolic pathways. GhostKOALA only accepts amino acid sequences so they will have to be translated before submission using the following seqkit's translate code, see Seqkit_Peptides.sh.
 
