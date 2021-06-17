@@ -14,7 +14,7 @@ Scripts were run using the following command:
     run_script scriptname.sh
 
 # 1. Removing Adapters from Raw Reads with CutAdapt
-Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing provider.
+Adapters are removed using the program Cutadapt. The adapter sequences should be available in the data provided by the sequencing company/lab.
 There are two adapters (and two raw data .fq.gz files) because this transcriptome was sequenced using Illumina paired-end sequencing.
 
 5' Adapter:
