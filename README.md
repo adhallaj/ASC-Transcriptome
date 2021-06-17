@@ -1,4 +1,4 @@
-# ASC-Transcriptome
+# De-novo Transcriptome Assembly
 Pipeline for assembly and annotation of a de-novo transcriptome using the Alabama SuperComputer.
 
 # Notes before starting:
