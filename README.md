@@ -105,9 +105,17 @@ The final output of the Filtered and GO Term annotated sequences are in a file c
 
     Name of your sequence(s),percent identity match,evalue,Matching Ensmbl Database Sequence,gene name,GO accession ID,gene description, gene definition
 
+Download the annotated_table.csv and the annotated transcripts to your home computer.
+
+In the annotated_table.csv file, there are two columns that can be deleted because they are redundant and cause issues when summarizing. The two columns should be a short description of the gene (ex. microtubule binding) and a paragraph describing the genes function. To get rid of these columns, open the annotated_table.csv file in Excel and delete the last two columns on the right.
+
 # 7. Summarizing the GO annotations using Rstudio:
 
-In the annotated_table.csv file, there are two columns that can be deleted because they are redundant and cause issues when summarizing. To get rid of these columns, open the annotated_table.csv file in Excel and delete the last two columns on the right. The two columns should be a short description of the gene (ex. microtubule binding) and a paragraph describing the genes function.
+In the GO annotation ouput there are multiple rows per sequence for different GO annotation matches. To collapse these rows the GOannotationzummarizer.R script is run using RStudio on the annotated_table.csv file. The output will be a file called annotationtablefinal.csv with one line per sequence and all of it's GO matches, each of which are separated by semicolons.
+
+ex.
+seqID,pident,evalue,bitscore,qcovhsp,genestableID,genename,GOtermaccession
+TRINITY_DN10_c2_g1_i1.p1,90.663,2.07e-147,426,31,ENSLCRG00005012553,myclb,GO:0046983;GO:0006355;GO:0003700
 
 # 8. Obtaining KEGG Metabolic Pathways using GhostKOALA:
 
