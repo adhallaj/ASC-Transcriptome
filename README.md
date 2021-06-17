@@ -113,8 +113,7 @@ In the annotated_table.csv file, there are two columns that can be deleted becau
 
 In the GO annotation ouput there are multiple rows per sequence for different GO annotation matches. To collapse these rows the GOannotationzummarizer.R script is run using RStudio on the annotated_table.csv file. The output will be a file called annotationtablefinal.csv with one line per sequence and all of it's GO matches, each of which are separated by semicolons.
 
-ex.
-seqID,pident,evalue,bitscore,qcovhsp,genestableID,genename,GOtermaccession
+ex. seqID,pident,evalue,bitscore,qcovhsp,genestableID,genename,GOtermaccession
 TRINITY_DN10_c2_g1_i1.p1,90.663,2.07e-147,426,31,ENSLCRG00005012553,myclb,GO:0046983;GO:0006355;GO:0003700
 
 # 8. Obtaining KEGG Metabolic Pathways using GhostKOALA:
