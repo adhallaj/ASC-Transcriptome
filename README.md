@@ -70,7 +70,7 @@ The output of BLASTX is a table file (chosen via the -outfmt '6 std qcovhsp' par
 
 # 6. Filtering and Annotating GO Terms
 
-Sequences with high percent identity matches (>75%), low evalues (<1e-10), and high query coverage per high similarity pairs (>26, where 33 is the max since these are amino acid sequences) were selected and matched to their corresponding GO Terms using the filter_blastx.sh script. Script written by Katherine Eaton, PhD candidate @ Auburn University. 
+Sequences with high percent identity matches (>75%), low evalues (<1e-10), and high query coverage per high similarity pairs (>26, where 33 is the max since these are amino acid sequences) were selected and matched to their corresponding GO Terms using the filter_blastx.sh script. Script written by Katherine Eaton, PhD student @ Auburn University. 
 
 The GO terms were retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
 
