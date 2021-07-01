@@ -111,7 +111,7 @@ In the annotated_table.csv file, there are two columns that can be deleted becau
 
 # 7. Summarizing the GO annotations using Rstudio:
 
-In the GO annotation ouput there are multiple rows per sequence for different GO annotation matches. To collapse these rows the GOannotationzummarizer.R script is run using RStudio on the annotated_table.csv file. The output will be a file called annotationtablefinal.csv with one line per sequence and all of it's GO matches, each of which are separated by semicolons.
+In the GO annotation ouput there are multiple rows per sequence for different GO annotation matches. To collapse these rows, the GOannotationzummarizer.R script is run using RStudio on the annotated_table.csv file. The output will be a file called annotationtablefinal.csv with one line per sequence and all of it's GO matches, each of which are separated by semicolons.
 
 ex.
 
