@@ -131,4 +131,9 @@ To run BUSCO, it must have the accompanying config.ini file (ideally in the same
 
 The output of BUSCO should be a file containing the numbers and percentages of  Complete BUSCOS (C), Complete and single-copy BUSCOs (S), Complete and duplicated BUSCOs (D), Fragmented BUSCOs (F), Missing BUSCOs (M), and Total BUSCO groups searched.
 
-SeqKit was run on the CD-hit output with the minimum parameters on the smallest queue.
+SeqKit was run on the CD-hit output with the minimum parameters on the smallest queue. The output should be a table with all the statistics for the sequences.
+
+ex.
+
+    file    format    type    num_seqs    sum_len min_len    avg_len    max_len    Q1    Q2    Q3    sum_gap    N50    Q20(%)    Q30(%)
+    
