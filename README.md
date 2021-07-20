@@ -130,3 +130,5 @@ To determine the percent completeness, sequence lengths, and N50 value of the CD
 To run BUSCO, it must have the accompanying config.ini file (ideally in the same folder as the busco.sh script), and the busco.sh script should have the correct path to the config file set in the BUSCO_CONFIG_FILE= variable. The config.ini file is realtively self explanatory. Make sure to change the output name (out =) if you run the script multiple times for any reason.
 
 The output of BUSCO should be a file containing the numbers and percentages of  Complete BUSCOS (C), Complete and single-copy BUSCOs (S), Complete and duplicated BUSCOs (D), Fragmented BUSCOs (F), Missing BUSCOs (M), and Total BUSCO groups searched.
+
+SeqKit was run on the CD-hit output with the minimum parameters on the smallest queue.
