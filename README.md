@@ -120,7 +120,9 @@ ex.
 
 # 8. Obtaining KEGG Metabolic Pathways using GhostKOALA:
 
-The CD-hit nucleotide output is the most complete form of our transcriptome, so it will be used for determining the metabolic pathways. GhostKOALA only accepts amino acid sequences so they will have to be translated before submission using the following SeqKit's translate function, see Seqkit_Peptides.sh.
+The CD-hit nucleotide output is the most complete form of our transcriptome, so it will be used for determining the metabolic pathways. GhostKOALA only accepts peptide sequences so they will have to be translated before submission using the following SeqKit's translate function, see Seqkit_Peptides.sh.
+
+After translation, the resulting peptide file was submitted to GhostKOALA queue with the genus_prokaryotes + family_eukaryotes databases selected.
 
 
 # 9. Statistical Analysis of Transcriptome using BUSCO and SeqKit:
