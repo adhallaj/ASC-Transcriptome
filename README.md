@@ -49,7 +49,7 @@ The .cds file is the identified ORFS in the assembled transcriptome, which inclu
 
 To reduce redundancy in the transcriptome, CD-HIT is executed on the transcriptome.fasta file. 
 
-# 5. Annotating Transcriptome with BlastX
+# 5. Annotating Transcriptome with BLASTX
 
 The database sequences for annotation were retreived from http://useast.ensembl.org/biomart/martview/ via the following steps:
 
@@ -109,7 +109,7 @@ Download the annotated_table.csv and the annotated transcripts to your home comp
 
 In the annotated_table.csv file, there are two columns that can be deleted because they are redundant and cause issues when summarizing. The two columns should be a short description of the gene (ex. microtubule binding) and a paragraph describing the genes function. To get rid of these columns, open the annotated_table.csv file in Excel and delete the last two columns on the right.
 
-# 7. Summarizing the GO annotations using Rstudio:
+# 7. Summarizing the GO annotations using Rstudio
 
 In the GO annotation ouput there are multiple rows per sequence for different GO annotation matches. To collapse these rows, the GOannotationsummarizer.R script is run using RStudio on the annotated_table.csv file. The output will be a file called annotationtablefinal.csv with one line per sequence and all of it's GO matches, each of which are separated by semicolons.
 
@@ -118,14 +118,14 @@ ex.
     seqID,pident,evalue,bitscore,qcovhsp,genestableID,genename,GOtermaccession
     TRINITY_DN10_c2_g1_i1.p1,90.663,2.07e-147,426,31,ENSLCRG00005012553,myclb,GO:0046983;GO:0006355;GO:0003700
 
-# 8. Obtaining KEGG Metabolic Pathways using GhostKOALA:
+# 8. Obtaining KEGG Metabolic Pathways using GhostKOALA
 
 The CD-hit nucleotide output is the most complete form of our transcriptome, so it will be used for determining the metabolic pathways. GhostKOALA only accepts peptide sequences so they will have to be translated before submission using the following SeqKit's translate function, see Seqkit_Peptides.sh.
 
 After translation, the resulting peptide file was submitted to GhostKOALA queue with the genus_prokaryotes + family_eukaryotes databases selected.
 
 
-# 9. Statistical Analysis of Transcriptome using BUSCO and SeqKit:
+# 9. Statistical Analysis of Transcriptome using BUSCO and SeqKit
 
 To determine the percent completeness, sequence lengths, and N50 value of the CD-hit nucleotide output, BUSCO and SeqKit's stats function are used. 
 
